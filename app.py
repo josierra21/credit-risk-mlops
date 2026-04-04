@@ -1,0 +1,1 @@
+from credit_risk.components import data_ingestion
