@@ -39,4 +39,4 @@ class CREDITriskData:
             df.replace({"na":np.nan},inplace=True)
             return df
         except Exception as e:
-            raise CReditriskException(e,sys)
+            raise CREDITriskException(e,sys)
