@@ -6,7 +6,7 @@ from sklearn.model_selection import train_test_split
 
 from credit_risk.entity.config_entity import DataIngestionConfig
 from credit_risk.entity.artifact_entity import DataIngestionArtifact
-from credit_risk.exception import USvisaException
+from credit_risk.exception import CREDITriskException
 from credit_risk.logger import logging
 from credit_risk.data_access.creditrisk_data import CREDITriskData
 
