@@ -6,7 +6,7 @@ grid_search:
     verbose: 3
 
 model_selection:
-  module_1:
+  module_0:
     class: XGBClassifier
     module: xgboost
     params:
