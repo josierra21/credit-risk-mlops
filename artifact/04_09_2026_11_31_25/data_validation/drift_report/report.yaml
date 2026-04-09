@@ -1,0 +1,1265 @@
+data_drift:
+  data:
+    cat_feature_names:
+    - education
+    - marriage
+    - payment_status_apr
+    - payment_status_aug
+    - payment_status_jul
+    - payment_status_jun
+    - payment_status_may
+    - payment_status_sep
+    - sex
+    datetime_feature_names: []
+    metrics:
+      'Unnamed: 0':
+        current_small_hist:
+          x:
+          - 8.0
+          - 3004.7
+          - 6001.4
+          - 8998.099999999999
+          - 11994.8
+          - 14991.5
+          - 17988.199999999997
+          - 20984.899999999998
+          - 23981.6
+          - 26978.3
+          - 29975.0
+          y:
+          - 3.5038542396636305e-05
+          - 3.398182445134092e-05
+          - 3.364812404756345e-05
+          - 3.286948977208262e-05
+          - 3.420429138719257e-05
+          - 3.0867287349417726e-05
+          - 3.3703740781526336e-05
+          - 3.236893916641638e-05
+          - 3.375935751548925e-05
+          - 3.325880690982302e-05
+        drift_detected: false
+        drift_score: 0.017496193769681895
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 2999.9
+          - 5999.8
+          - 8999.7
+          - 11999.6
+          - 14999.5
+          - 17999.4
+          - 20999.3
+          - 23999.2
+          - 26999.100000000002
+          - 29999.0
+          y:
+          - 3.291776392546418e-05
+          - 3.3181661610942586e-05
+          - 3.326499772214629e-05
+          - 3.3459448648288286e-05
+          - 3.3126104203473454e-05
+          - 3.3890018556174076e-05
+          - 3.329277642588089e-05
+          - 3.352889540762468e-05
+          - 3.330666577774813e-05
+          - 3.337611253708459e-05
+        stattest_name: Wasserstein distance (normed)
+      age:
+        current_small_hist:
+          x:
+          - 21.0
+          - 26.4
+          - 31.8
+          - 37.2
+          - 42.6
+          - 48.0
+          - 53.400000000000006
+          - 58.800000000000004
+          - 64.2
+          - 69.6
+          - 75.0
+          y:
+          - 0.03103973829969147
+          - 0.04361671808978599
+          - 0.04138631773292193
+          - 0.027694137764395384
+          - 0.018896447467876044
+          - 0.013320446575715883
+          - 0.006319467677781496
+          - 0.0021374670086613885
+          - 0.000495644523747569
+          - 0.00027880004460800685
+        drift_detected: false
+        drift_score: 0.015284608985895357
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 21.0
+          - 26.8
+          - 32.6
+          - 38.4
+          - 44.2
+          - 50.0
+          - 55.8
+          - 61.6
+          - 67.4
+          - 73.19999999999999
+          - 79.0
+          y:
+          - 0.02953972913007303
+          - 0.047343013312378654
+          - 0.037607180826476856
+          - 0.027741344642692036
+          - 0.014943202828880472
+          - 0.010508632245539433
+          - 0.003488432559859478
+          - 0.0010039174447628726
+          - 0.0002166728298049373
+          - 2.1667282980493626e-05
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_apr:
+        current_small_hist:
+          x:
+          - -51183.0
+          - 23929.699999999997
+          - 99042.4
+          - 174155.09999999998
+          - 249267.8
+          - 324380.5
+          - 399493.19999999995
+          - 474605.9
+          - 549718.6
+          - 624831.2999999999
+          - 699944.0
+          y:
+          - 7.801610113868893e-06
+          - 3.894148393014763e-06
+          - 1.0539717872831983e-06
+          - 3.727731795022679e-07
+          - 1.1981995055430037e-07
+          - 4.437775946455574e-08
+          - 1.996999175905005e-08
+          - 4.4377759464555736e-09
+          - 0.0
+          - 2.2188879732277835e-09
+        drift_detected: false
+        drift_score: 0.010789204119821942
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -339603.0
+          - -209476.3
+          - -79349.6
+          - 50777.09999999998
+          - 180903.8
+          - 311030.5
+          - 441157.19999999995
+          - 571283.9
+          - 701410.6
+          - 831537.3
+          - 961664.0
+          y:
+          - 3.20200747937715e-10
+          - 9.606022438131453e-10
+          - 5.860954490251937e-06
+          - 1.5344019841175306e-06
+          - 2.3983036020534856e-07
+          - 4.0025093492214395e-08
+          - 8.005018698442873e-09
+          - 0.0
+          - 0.0
+          - 3.2020074793771514e-10
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_aug:
+        current_small_hist:
+          x:
+          - -69777.0
+          - -351.8000000000029
+          - 69073.4
+          - 138498.59999999998
+          - 207923.8
+          - 277349.0
+          - 346774.19999999995
+          - 416199.39999999997
+          - 485624.6
+          - 555049.7999999999
+          - 624475.0
+          y:
+          - 1.2003326361801382e-07
+          - 1.0812596386710684e-05
+          - 2.0621714689574778e-06
+          - 8.186268578748542e-07
+          - 3.4809646449224e-07
+          - 1.3443725525217558e-07
+          - 6.721862762608774e-08
+          - 3.120864854068359e-08
+          - 7.201995817080834e-09
+          - 2.4006652723602742e-09
+        drift_detected: false
+        drift_score: 0.023423603410847534
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -67526.0
+          - 37619.7
+          - 142765.4
+          - 247911.09999999998
+          - 353056.8
+          - 458202.5
+          - 563348.2
+          - 668493.9
+          - 773639.6
+          - 878785.2999999999
+          - 983931.0
+          y:
+          - 5.867255310171188e-06
+          - 2.7656068357209726e-06
+          - 6.221525622699423e-07
+          - 1.6802081936462132e-07
+          - 6.142270519225543e-08
+          - 2.139887793794707e-08
+          - 3.5664796563245073e-09
+          - 7.925510347387803e-10
+          - 0.0
+          - 3.962755173693897e-10
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_jul:
+        current_small_hist:
+          x:
+          - -61506.0
+          - 111053.5
+          - 283613.0
+          - 456172.5
+          - 628732.0
+          - 801291.5
+          - 973851.0
+          - 1146410.5
+          - 1318970.0
+          - 1491529.5
+          - 1664089.0
+          y:
+          - 5.060090384282909e-06
+          - 6.538807387210401e-07
+          - 7.43704828382867e-08
+          - 4.829252132356279e-09
+          - 9.658504264712558e-10
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 9.658504264712558e-10
+        drift_detected: false
+        drift_score: 0.02272409976110172
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -157264.0
+          - -56029.0
+          - 45206.0
+          - 146441.0
+          - 247676.0
+          - 348911.0
+          - 450146.0
+          - 551381.0
+          - 652616.0
+          - 753851.0
+          - 855086.0
+          y:
+          - 4.115836090943514e-10
+          - 6.625261355591775e-06
+          - 2.440690801929504e-06
+          - 5.758054691229976e-07
+          - 1.535206861921931e-07
+          - 5.5975370836831794e-08
+          - 2.1813931282000625e-08
+          - 2.88108526366046e-09
+          - 1.2347508272830542e-09
+          - 4.115836090943514e-10
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_jun:
+        current_small_hist:
+          x:
+          - -46627.0
+          - 9693.199999999997
+          - 66013.4
+          - 122333.59999999998
+          - 178653.8
+          - 234974.0
+          - 291294.19999999995
+          - 347614.39999999997
+          - 403934.6
+          - 460254.8
+          - 516575.0
+          y:
+          - 6.770809289266254e-06
+          - 7.013469412395553e-06
+          - 2.17802256857516e-06
+          - 9.499256039573721e-07
+          - 4.3501265975617976e-07
+          - 2.130674251867005e-07
+          - 9.173736362205151e-08
+          - 7.102247506223343e-08
+          - 1.7755618765558358e-08
+          - 1.4796348971298632e-08
+        drift_detected: false
+        drift_score: 0.01556847367855565
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -170000.0
+          - -63841.399999999994
+          - 42317.20000000001
+          - 148475.80000000005
+          - 254634.40000000002
+          - 360793.0
+          - 466951.6000000001
+          - 573110.2000000001
+          - 679268.8
+          - 785427.4
+          - 891586.0
+          y:
+          - 1.1774835011011826e-09
+          - 6.46202945404329e-06
+          - 2.3039427171546465e-06
+          - 4.808057629496497e-07
+          - 1.22458284114523e-07
+          - 3.5716999533402506e-08
+          - 1.216732951137889e-08
+          - 7.84989000734122e-10
+          - 3.92494500367061e-10
+          - 3.92494500367061e-10
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_may:
+        current_small_hist:
+          x:
+          - -81334.0
+          - -21789.199999999997
+          - 37755.600000000006
+          - 97300.40000000002
+          - 156845.2
+          - 216390.0
+          - 275934.80000000005
+          - 335479.60000000003
+          - 395024.4
+          - 454569.20000000007
+          - 514114.0
+          y:
+          - 5.598025912142342e-09
+          - 1.1363992601648954e-05
+          - 3.2468550290425575e-06
+          - 1.2427617524956002e-06
+          - 5.486065393899496e-07
+          - 1.959309069249818e-07
+          - 9.516644050641984e-08
+          - 5.598025912142343e-08
+          - 2.239210364856935e-08
+          - 1.6794077736427047e-08
+        drift_detected: false
+        drift_score: 0.01446704569094297
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -61372.0
+          - 37482.3
+          - 136336.6
+          - 235190.90000000002
+          - 334045.2
+          - 432899.5
+          - 531753.8
+          - 630608.1
+          - 729462.4
+          - 828316.7000000001
+          - 927171.0
+          y:
+          - 6.93318348316664e-06
+          - 2.416013601161844e-06
+          - 5.774491684563374e-07
+          - 1.357216293744093e-07
+          - 3.6670129675694436e-08
+          - 1.4752351018957524e-08
+          - 1.2644872301963606e-09
+          - 0.0
+          - 4.214957433987864e-10
+          - 4.214957433987869e-10
+        stattest_name: Wasserstein distance (normed)
+      bill_statement_sep:
+        current_small_hist:
+          x:
+          - -14386.0
+          - 48438.6
+          - 111263.2
+          - 174087.8
+          - 236912.4
+          - 299737.0
+          - 362561.6
+          - 425386.2
+          - 488210.8
+          - 551035.4
+          - 613860.0
+          y:
+          - 1.0391364741412335e-05
+          - 3.199383680914801e-06
+          - 1.2256345444300483e-06
+          - 6.101643835907165e-07
+          - 2.5733019655782394e-07
+          - 1.193799880938359e-07
+          - 7.428088148060894e-08
+          - 2.918177486738211e-08
+          - 5.305777248614924e-09
+          - 5.305777248614929e-09
+        drift_detected: false
+        drift_score: 0.02550370864389765
+        feature_type: num
+        ref_small_hist:
+          x:
+          - -165580.0
+          - -52570.899999999994
+          - 60438.20000000001
+          - 173447.30000000005
+          - 286456.4
+          - 399465.5
+          - 512474.6000000001
+          - 625483.7000000001
+          - 738492.8
+          - 851501.9
+          - 964511.0
+          y:
+          - 7.374037430024072e-10
+          - 6.480304093505154e-06
+          - 1.745065957815196e-06
+          - 4.49078879488466e-07
+          - 1.1909070449488878e-07
+          - 4.350682083714199e-08
+          - 9.217546787530091e-09
+          - 1.106105614503611e-09
+          - 3.6870187150120365e-10
+          - 3.6870187150120365e-10
+        stattest_name: Wasserstein distance (normed)
+      dataset_drift: false
+      default_payment_next_month:
+        current_small_hist:
+          x:
+          - 0.0
+          - 0.1
+          - 0.2
+          - 0.30000000000000004
+          - 0.4
+          - 0.5
+          - 0.6000000000000001
+          - 0.7000000000000001
+          - 0.8
+          - 0.9
+          - 1.0
+          y:
+          - 7.78
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 2.2200000000000006
+        drift_detected: false
+        drift_score: 0.0008514104565929164
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 0.1
+          - 0.2
+          - 0.30000000000000004
+          - 0.4
+          - 0.5
+          - 0.6000000000000001
+          - 0.7000000000000001
+          - 0.8
+          - 0.9
+          - 1.0
+          y:
+          - 7.79
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 2.2100000000000004
+        stattest_name: Jensen-Shannon distance
+      education:
+        current_small_hist:
+          x:
+          - Graduate school
+          - High school
+          - Others
+          - University
+          y:
+          - 2129
+          - 966
+          - 85
+          - 2786
+        drift_detected: false
+        drift_score: 0.006113067088916549
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Graduate school
+          - High school
+          - Others
+          - University
+          y:
+          - 8408
+          - 3920
+          - 382
+          - 11174
+        stattest_name: Jensen-Shannon distance
+      limit_bal:
+        current_small_hist:
+          x:
+          - 10000.0
+          - 89000.0
+          - 168000.0
+          - 247000.0
+          - 326000.0
+          - 405000.0
+          - 484000.0
+          - 563000.0
+          - 642000.0
+          - 721000.0
+          - 800000.0
+          y:
+          - 4.409282700421941e-06
+          - 2.7679324894514764e-06
+          - 2.4978902953586497e-06
+          - 1.3143459915611813e-06
+          - 8.50210970464135e-07
+          - 3.5654008438818565e-07
+          - 4.135021097046413e-07
+          - 2.9535864978902954e-08
+          - 1.0548523206751055e-08
+          - 8.438818565400844e-09
+        drift_detected: false
+        drift_score: 0.02265098659941327
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 10000.0
+          - 109000.0
+          - 208000.0
+          - 307000.0
+          - 406000.0
+          - 505000.0
+          - 604000.0
+          - 703000.0
+          - 802000.0
+          - 901000.0
+          - 1000000.0
+          y:
+          - 4.241582491582492e-06
+          - 2.6359427609427605e-06
+          - 1.6818181818181819e-06
+          - 9.457070707070707e-07
+          - 5.248316498316498e-07
+          - 4.461279461279462e-08
+          - 1.8518518518518518e-08
+          - 7.575757575757575e-09
+          - 0.0
+          - 4.2087542087542087e-10
+        stattest_name: Wasserstein distance (normed)
+      marriage:
+        current_small_hist:
+          x:
+          - Married
+          - Others
+          - Single
+          y:
+          - 2692
+          - 73
+          - 3206
+        drift_detected: false
+        drift_score: 0.0041115404282782726
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Married
+          - Others
+          - Single
+          y:
+          - 10893
+          - 301
+          - 12685
+        stattest_name: Jensen-Shannon distance
+      n_drifted_features: 0
+      n_features: 25
+      payment_status_apr:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1145
+          - 586
+          - 35
+          - 13
+          - 3
+          - 4
+          - 2
+          - 0
+          - 4212
+        drift_detected: false
+        drift_score: 0.02042115102938907
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4595
+          - 2180
+          - 149
+          - 36
+          - 10
+          - 15
+          - 44
+          - 2
+          - 16969
+        stattest_name: Jensen-Shannon distance
+      payment_status_aug:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1197
+          - 6
+          - 758
+          - 73
+          - 18
+          - 7
+          - 3
+          - 2
+          - 0
+          - 3936
+        drift_detected: false
+        drift_score: 0.012801002792156594
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4853
+          - 22
+          - 3169
+          - 253
+          - 81
+          - 18
+          - 9
+          - 18
+          - 1
+          - 15576
+        stattest_name: Jensen-Shannon distance
+      payment_status_jul:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1177
+          - 0
+          - 743
+          - 55
+          - 21
+          - 6
+          - 2
+          - 3
+          - 0
+          - 3993
+        drift_detected: false
+        drift_score: 0.018694128524054495
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4761
+          - 4
+          - 3076
+          - 185
+          - 55
+          - 15
+          - 21
+          - 24
+          - 3
+          - 15856
+        stattest_name: Jensen-Shannon distance
+      payment_status_jun:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1091
+          - 0
+          - 616
+          - 40
+          - 17
+          - 7
+          - 0
+          - 4
+          - 1
+          - 4224
+        drift_detected: false
+        drift_score: 0.02216091618314176
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4596
+          - 2
+          - 2543
+          - 140
+          - 52
+          - 28
+          - 5
+          - 54
+          - 1
+          - 16579
+        stattest_name: Jensen-Shannon distance
+      payment_status_may:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1102
+          - 531
+          - 33
+          - 19
+          - 3
+          - 0
+          - 5
+          - 0
+          - 4307
+        drift_detected: false
+        drift_score: 0.015933832305889906
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4437
+          - 2095
+          - 145
+          - 65
+          - 14
+          - 4
+          - 53
+          - 1
+          - 17186
+        stattest_name: Jensen-Shannon distance
+      payment_status_sep:
+        current_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 1122
+          - 761
+          - 515
+          - 71
+          - 17
+          - 4
+          - 2
+          - 2
+          - 2
+          - 3504
+        drift_detected: false
+        drift_score: 0.011192905801098342
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Payed duly
+          - Payment delayed 1 month
+          - Payment delayed 2 months
+          - Payment delayed 3 months
+          - Payment delayed 4 months
+          - Payment delayed 5 months
+          - Payment delayed 6 months
+          - Payment delayed 7 months
+          - Payment delayed 8 months
+          - Unknown
+          y:
+          - 4564
+          - 2927
+          - 2152
+          - 251
+          - 59
+          - 22
+          - 9
+          - 7
+          - 17
+          - 13992
+        stattest_name: Jensen-Shannon distance
+      previous_payment_apr:
+        current_small_hist:
+          x:
+          - 0.0
+          - 52714.3
+          - 105428.6
+          - 158142.90000000002
+          - 210857.2
+          - 263571.5
+          - 316285.80000000005
+          - 369000.10000000003
+          - 421714.4
+          - 474428.7
+          - 527143.0
+          y:
+          - 1.8676146700231246e-05
+          - 1.4543808163376287e-07
+          - 8.220413309734422e-08
+          - 4.742546140231399e-08
+          - 9.4850922804628e-09
+          - 0.0
+          - 0.0
+          - 6.323394853641866e-09
+          - 0.0
+          - 3.161697426820933e-09
+        drift_detected: false
+        drift_score: 0.015248175976805582
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 52866.6
+          - 105733.2
+          - 158599.8
+          - 211466.4
+          - 264333.0
+          - 317199.6
+          - 370066.2
+          - 422932.8
+          - 475799.39999999997
+          - 528666.0
+          y:
+          - 1.8605004546033477e-05
+          - 1.8994349299305548e-07
+          - 5.43821618942773e-08
+          - 4.334810006065581e-08
+          - 1.2610356381281691e-08
+          - 5.5170309168107426e-09
+          - 1.5762945476602106e-09
+          - 1.5762945476602123e-09
+          - 7.881472738301061e-10
+          - 7.881472738301053e-10
+        stattest_name: Wasserstein distance (normed)
+      previous_payment_aug:
+        current_small_hist:
+          x:
+          - 0.0
+          - 168425.9
+          - 336851.8
+          - 505277.69999999995
+          - 673703.6
+          - 842129.5
+          - 1010555.3999999999
+          - 1178981.3
+          - 1347407.2
+          - 1515833.0999999999
+          - 1684259.0
+          y:
+          - 5.9205066837503425e-06
+          - 1.2864213085200477e-08
+          - 2.968664558123187e-09
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 9.89554852707728e-10
+        drift_detected: false
+        drift_score: 0.01736249976527549
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 122708.2
+          - 245416.4
+          - 368124.6
+          - 490832.8
+          - 613541.0
+          - 736249.2
+          - 858957.4
+          - 981665.6
+          - 1104373.8
+          - 1227082.0
+          y:
+          - 8.111384025952083e-06
+          - 2.9541628024858976e-08
+          - 5.772502027846008e-09
+          - 1.3582357712578837e-09
+          - 3.395589428144709e-10
+          - 0.0
+          - 0.0
+          - 0.0
+          - 3.3955894281447076e-10
+          - 6.791178856289422e-10
+        stattest_name: Wasserstein distance (normed)
+      previous_payment_jul:
+        current_small_hist:
+          x:
+          - 0.0
+          - 41758.8
+          - 83517.6
+          - 125276.40000000001
+          - 167035.2
+          - 208794.0
+          - 250552.80000000002
+          - 292311.60000000003
+          - 334070.4
+          - 375829.2
+          - 417588.0
+          y:
+          - 2.3595824911954683e-05
+          - 1.9157638629462531e-07
+          - 8.780584371836994e-08
+          - 4.789409657365633e-08
+          - 7.982349428942724e-09
+          - 0.0
+          - 0.0
+          - 3.991174714471362e-09
+          - 3.991174714471362e-09
+          - 7.982349428942724e-09
+        drift_detected: false
+        drift_score: 0.029911527535096134
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 89604.0
+          - 179208.0
+          - 268812.0
+          - 358416.0
+          - 448020.0
+          - 537624.0
+          - 627228.0
+          - 716832.0
+          - 806436.0
+          - 896040.0
+          y:
+          - 1.1073259378301563e-05
+          - 6.649628736812344e-08
+          - 1.3020252072080116e-08
+          - 4.650090025742899e-09
+          - 1.3950270077228696e-09
+          - 4.6500900257428985e-10
+          - 0.0
+          - 0.0
+          - 0.0
+          - 9.300180051485797e-10
+        stattest_name: Wasserstein distance (normed)
+      previous_payment_jun:
+        current_small_hist:
+          x:
+          - 0.0
+          - 52889.7
+          - 105779.4
+          - 158669.09999999998
+          - 211558.8
+          - 264448.5
+          - 317338.19999999995
+          - 370227.89999999997
+          - 423117.6
+          - 476007.3
+          - 528897.0
+          y:
+          - 1.868668820835311e-05
+          - 1.6701424536976641e-07
+          - 3.4663333944668504e-08
+          - 1.2604848707152177e-08
+          - 3.151212176788044e-09
+          - 0.0
+          - 0.0
+          - 0.0
+          - 0.0
+          - 3.151212176788044e-09
+        drift_detected: false
+        drift_score: 0.024739267190004525
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 62100.0
+          - 124200.0
+          - 186300.0
+          - 248400.0
+          - 310500.0
+          - 372600.0
+          - 434700.0
+          - 496800.0
+          - 558900.0
+          - 621000.0
+          y:
+          - 1.592324208266237e-05
+          - 1.2144390767579173e-07
+          - 3.488996242619431e-08
+          - 1.2077294685990337e-08
+          - 6.038647342995169e-09
+          - 2.6838432635534084e-09
+          - 1.3419216317767042e-09
+          - 0.0
+          - 6.709608158883521e-10
+          - 6.709608158883521e-10
+        stattest_name: Wasserstein distance (normed)
+      previous_payment_may:
+        current_small_hist:
+          x:
+          - 0.0
+          - 37926.7
+          - 75853.4
+          - 113780.09999999999
+          - 151706.8
+          - 189633.5
+          - 227560.19999999998
+          - 265486.89999999997
+          - 303413.6
+          - 341340.3
+          - 379267.0
+          y:
+          - 2.58832607811032e-05
+          - 2.416942857318635e-07
+          - 1.4941101299787925e-07
+          - 3.5155532470089234e-08
+          - 2.1972207793805767e-08
+          - 2.197220779380578e-08
+          - 4.394441558761156e-09
+          - 0.0
+          - 4.3944415587611526e-09
+          - 4.3944415587611526e-09
+        drift_detected: false
+        drift_score: 0.016712516006014033
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 42652.9
+          - 85305.8
+          - 127958.70000000001
+          - 170611.6
+          - 213264.5
+          - 255917.40000000002
+          - 298570.3
+          - 341223.2
+          - 383876.10000000003
+          - 426529.0
+          y:
+          - 2.3040637330638713e-05
+          - 2.383581577493363e-07
+          - 8.79189926124601e-08
+          - 3.7121352436372056e-08
+          - 2.0514431609574033e-08
+          - 5.8612661741640045e-09
+          - 3.907510782776008e-09
+          - 7.815021565552007e-09
+          - 0.0
+          - 2.930633087082006e-09
+        stattest_name: Wasserstein distance (normed)
+      previous_payment_sep:
+        current_small_hist:
+          x:
+          - 0.0
+          - 40501.6
+          - 81003.2
+          - 121504.79999999999
+          - 162006.4
+          - 202508.0
+          - 243009.59999999998
+          - 283511.2
+          - 324012.8
+          - 364514.39999999997
+          - 405016.0
+          y:
+          - 2.4270646097931934e-05
+          - 2.2632850718654739e-07
+          - 1.1110672170975964e-07
+          - 3.70355739032532e-08
+          - 1.6460255068112535e-08
+          - 2.0575318835140683e-08
+          - 4.11506376702813e-09
+          - 0.0
+          - 0.0
+          - 4.11506376702813e-09
+        drift_detected: false
+        drift_score: 0.01697109322410048
+        feature_type: num
+        ref_small_hist:
+          x:
+          - 0.0
+          - 87355.2
+          - 174710.4
+          - 262065.59999999998
+          - 349420.8
+          - 436776.0
+          - 524131.19999999995
+          - 611486.4
+          - 698841.6
+          - 786196.7999999999
+          - 873552.0
+          y:
+          - 1.1372629601138035e-05
+          - 5.151381944062861e-08
+          - 1.6694293337240756e-08
+          - 4.29281828671905e-09
+          - 9.539596192709e-10
+          - 9.539596192709005e-10
+          - 0.0
+          - 0.0
+          - 0.0
+          - 4.769798096354496e-10
+        stattest_name: Wasserstein distance (normed)
+      sex:
+        current_small_hist:
+          x:
+          - Female
+          - Male
+          y:
+          - 3558
+          - 2412
+        drift_detected: false
+        drift_score: 0.007165378344183587
+        feature_type: cat
+        ref_small_hist:
+          x:
+          - Female
+          - Male
+          y:
+          - 14469
+          - 9411
+        stattest_name: Jensen-Shannon distance
+      share_drifted_features: 0.0
+    num_feature_names:
+    - 'Unnamed: 0'
+    - age
+    - bill_statement_apr
+    - bill_statement_aug
+    - bill_statement_jul
+    - bill_statement_jun
+    - bill_statement_may
+    - bill_statement_sep
+    - default_payment_next_month
+    - limit_bal
+    - previous_payment_apr
+    - previous_payment_aug
+    - previous_payment_jul
+    - previous_payment_jun
+    - previous_payment_may
+    - previous_payment_sep
+    options:
+      confidence: null
+      drift_share: 0.5
+      nbinsx: 10
+      xbins: null
+    target_names: null
+    text_feature_names: []
+    utility_columns:
+      date: null
+      id: null
+      prediction: null
+      target: null
+  datetime: '2026-04-09 11:31:32.875881'
+  name: data_drift
+timestamp: '2026-04-09 11:31:32.876875'

@@ -1,5 +1,5 @@
 columns:
-  - Unnamed: 0: int
+  - "Unnamed: 0": int
   - limit_bal: int
   - sex: category
   - education: category
@@ -26,7 +26,7 @@ columns:
   - default_payment_next_month: category
 
 numerical_columns:
-  - Unnamed: 0
+  - "Unnamed: 0"
   - limit_bal
   - age
   - bill_statement_sep
@@ -55,7 +55,7 @@ categorical_columns:
   - default_payment_next_month
 
 drop_columns:
-  - Unnamed: 0
+  - "Unnamed: 0"
 
 num_features:
   - limit_bal
