@@ -1,0 +1,97 @@
+columns:
+  - Unnamed: 0: int
+  - limit_bal: int
+  - sex: category
+  - education: category
+  - marriage: category
+  - age: float
+  - payment_status_sep: category
+  - payment_status_aug: category
+  - payment_status_jul: category
+  - payment_status_jun: category
+  - payment_status_may: category
+  - payment_status_apr: category
+  - bill_statement_sep: int
+  - bill_statement_aug: int
+  - bill_statement_jul: int
+  - bill_statement_jun: int
+  - bill_statement_may: int
+  - bill_statement_apr: int
+  - previous_payment_sep: int
+  - previous_payment_aug: int
+  - previous_payment_jul: int
+  - previous_payment_jun: int
+  - previous_payment_may: int
+  - previous_payment_apr: int
+  - default_payment_next_month: category
+
+numerical_columns:
+  - Unnamed: 0
+  - limit_bal
+  - age
+  - bill_statement_sep
+  - bill_statement_aug
+  - bill_statement_jul
+  - bill_statement_jun
+  - bill_statement_may
+  - bill_statement_apr
+  - previous_payment_sep
+  - previous_payment_aug
+  - previous_payment_jul
+  - previous_payment_jun
+  - previous_payment_may
+  - previous_payment_apr
+
+categorical_columns:
+  - sex
+  - education
+  - marriage
+  - payment_status_sep
+  - payment_status_aug
+  - payment_status_jul
+  - payment_status_jun
+  - payment_status_may
+  - payment_status_apr
+  - default_payment_next_month
+
+drop_columns:
+  - Unnamed: 0
+
+#for data transformation
+num_features:
+  - limit_bal
+  - age
+  - bill_statement_sep
+  - bill_statement_aug
+  - bill_statement_jul
+  - bill_statement_jun
+  - bill_statement_may
+  - bill_statement_apr
+  - previous_payment_sep
+  - previous_payment_aug
+  - previous_payment_jul
+  - previous_payment_jun
+  - previous_payment_may
+  - previous_payment_apr
+
+or_columns:
+  - education
+  - payment_status_sep
+  - payment_status_aug
+  - payment_status_jul
+  - payment_status_jun
+  - payment_status_may
+  - payment_status_apr
+
+oh_columns:
+  - sex
+  - marriage
+
+transform_columns:
+  - limit_bal
+  - previous_payment_sep
+  - previous_payment_aug
+  - previous_payment_jul
+  - previous_payment_jun
+  - previous_payment_may
+  - previous_payment_apr
