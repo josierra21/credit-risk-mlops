@@ -19,7 +19,7 @@ MODEL_FILE_NAME = "model.pkl"
 
 
 TARGET_COLUMN = "default_payment_next_month"
-PREPROCSSING_OBJECT_FILE_NAME = "preprocessing.pkl"
+PREPROCESSING_OBJECT_FILE_NAME = "preprocessing.pkl"
 SCHEMA_FILE_PATH = os.path.join("config", "schema.yaml")
 
 

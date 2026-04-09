@@ -23,7 +23,7 @@ columns:
   - previous_payment_jun: int
   - previous_payment_may: int
   - previous_payment_apr: int
-  - default_payment_next_month: category
+  - default_payment_next_month: int
 
 numerical_columns:
   - "Unnamed: 0"
@@ -41,6 +41,7 @@ numerical_columns:
   - previous_payment_jun
   - previous_payment_may
   - previous_payment_apr
+  - default_payment_next_month
 
 categorical_columns:
   - sex
@@ -52,7 +53,6 @@ categorical_columns:
   - payment_status_jun
   - payment_status_may
   - payment_status_apr
-  - default_payment_next_month
 
 drop_columns:
   - "Unnamed: 0"
@@ -72,19 +72,6 @@ num_features:
   - previous_payment_jun
   - previous_payment_may
   - previous_payment_apr
-
-or_columns:
-  - education
-  - payment_status_sep
-  - payment_status_aug
-  - payment_status_jul
-  - payment_status_jun
-  - payment_status_may
-  - payment_status_apr
-
-oh_columns:
-  - sex
-  - marriage
 
 transform_columns:
   - limit_bal
