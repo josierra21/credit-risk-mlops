@@ -1,11 +1,11 @@
 from credit_risk.cloud_storage.aws_storage import SimpleStorageService
 from credit_risk.exception import CREDITriskException
-from credit_risk.entity.estimator import CREDITriskModel
+from credit_risk.entity.estimator import CreditRiskModel
 import sys
 from pandas import DataFrame
 
 
-class CREDITriskEstimator:
+class CreditRiskEstimator:
     """
     This class is used to save and retrieve credit_risk model in s3 bucket and to do prediction
     """
@@ -18,7 +18,7 @@ class CREDITriskEstimator:
         self.bucket_name = bucket_name
         self.s3 = SimpleStorageService()
         self.model_path = model_path
-        self.loaded_model:CREDITriskModel=None
+        self.loaded_model:CreditRiskModel=None
 
 
     def is_model_present(self,model_path):
@@ -28,7 +28,7 @@ class CREDITriskEstimator:
             print(e)
             return False
 
-    def load_model(self,)->CREDITriskModel:
+    def load_model(self,)->CreditRiskModel:
         """
         Load the model from the model_path
         :return:
