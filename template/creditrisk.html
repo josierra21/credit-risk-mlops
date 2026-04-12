@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Credit Card Default Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', path='/css/style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light static-top">
+      <div class="container-fluid"></div>
+    </nav>
+
+    <section>
+      <div class="container-fluid">
+        <div class="container">
+          <form action="/" method="post">
+            <legend>Credit Card Default Prediction Form</legend>
+
+            <p class="mb-4">
+              Please provide credit card account information from the previous six months.
+              Enter information beginning with the <strong>most recent month</strong>, followed by each earlier month in order.
+            </p>
+
+            <h5 class="mt-4 mb-3">Customer Information</h5>
+
+            <div class="mb-3">
+              <label for="limit_bal">Credit Limit</label>
+              <input type="number" class="form-control" id="limit_bal" name="limit_bal" placeholder="Enter credit limit" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="sex">Sex</label>
+              <select class="form-control" id="sex" name="sex" required="required">
+                <option value="" disabled selected>Select Sex</option>
+                <option>Female</option>
+                <option>Male</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="education">Education</label>
+              <select class="form-control" id="education" name="education" required="required">
+                <option value="" disabled selected>Select Education</option>
+                <option>Graduate school</option>
+                <option>University</option>
+                <option>High school</option>
+                <option value="Others">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="marriage">Marital Status</label>
+              <select class="form-control" id="marriage" name="marriage" required="required">
+                <option value="" disabled selected>Select Marital Status</option>
+                <option>Married</option>
+                <option>Single</option>
+                <option value="Others">Other</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age" name="age" min="18" max="100" placeholder="Enter age" required="required">
+            </div>
+
+            <h5 class="mt-4 mb-3">Payment Status History</h5>
+
+            <div class="mb-3">
+              <label for="payment_status_sep">Payment Status (Most Recent Month)</label>
+              <select class="form-control" id="payment_status_sep" name="payment_status_sep" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="payment_status_aug">Payment Status (2 Months Ago)</label>
+              <select class="form-control" id="payment_status_aug" name="payment_status_aug" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="payment_status_jul">Payment Status (3 Months Ago)</label>
+              <select class="form-control" id="payment_status_jul" name="payment_status_jul" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="payment_status_jun">Payment Status (4 Months Ago)</label>
+              <select class="form-control" id="payment_status_jun" name="payment_status_jun" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="payment_status_may">Payment Status (5 Months Ago)</label>
+              <select class="form-control" id="payment_status_may" name="payment_status_may" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="payment_status_apr">Payment Status (6 Months Ago)</label>
+              <select class="form-control" id="payment_status_apr" name="payment_status_apr" required="required">
+                <option value="" disabled selected>Select Payment Status</option>
+                <option>Unknown</option>
+                <option value="Payed duly">Paid on time</option>
+                <option>Payment delayed 1 month</option>
+                <option>Payment delayed 2 months</option>
+                <option>Payment delayed 3 months</option>
+                <option>Payment delayed 4 months</option>
+                <option>Payment delayed 5 months</option>
+                <option>Payment delayed 6 months</option>
+                <option>Payment delayed 7 months</option>
+                <option>Payment delayed 8 months</option>
+              </select>
+            </div>
+
+            <h5 class="mt-4 mb-3">Bill Statement Amounts</h5>
+
+            <div class="mb-3">
+              <label for="bill_statement_sep">Bill Amount (Most Recent Month)</label>
+              <input type="number" class="form-control" id="bill_statement_sep" name="bill_statement_sep" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="bill_statement_aug">Bill Amount (2 Months Ago)</label>
+              <input type="number" class="form-control" id="bill_statement_aug" name="bill_statement_aug" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="bill_statement_jul">Bill Amount (3 Months Ago)</label>
+              <input type="number" class="form-control" id="bill_statement_jul" name="bill_statement_jul" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="bill_statement_jun">Bill Amount (4 Months Ago)</label>
+              <input type="number" class="form-control" id="bill_statement_jun" name="bill_statement_jun" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="bill_statement_may">Bill Amount (5 Months Ago)</label>
+              <input type="number" class="form-control" id="bill_statement_may" name="bill_statement_may" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="bill_statement_apr">Bill Amount (6 Months Ago)</label>
+              <input type="number" class="form-control" id="bill_statement_apr" name="bill_statement_apr" placeholder="Enter bill amount" required="required">
+            </div>
+
+            <h5 class="mt-4 mb-3">Previous Payment Amounts</h5>
+
+            <div class="mb-3">
+              <label for="previous_payment_sep">Previous Payment Amount (Most Recent Month)</label>
+              <input type="number" class="form-control" id="previous_payment_sep" name="previous_payment_sep" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="previous_payment_aug">Previous Payment Amount (2 Months Ago)</label>
+              <input type="number" class="form-control" id="previous_payment_aug" name="previous_payment_aug" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="previous_payment_jul">Previous Payment Amount (3 Months Ago)</label>
+              <input type="number" class="form-control" id="previous_payment_jul" name="previous_payment_jul" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="previous_payment_jun">Previous Payment Amount (4 Months Ago)</label>
+              <input type="number" class="form-control" id="previous_payment_jun" name="previous_payment_jun" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="previous_payment_may">Previous Payment Amount (5 Months Ago)</label>
+              <input type="number" class="form-control" id="previous_payment_may" name="previous_payment_may" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <div class="mb-3">
+              <label for="previous_payment_apr">Previous Payment Amount (6 Months Ago)</label>
+              <input type="number" class="form-control" id="previous_payment_apr" name="previous_payment_apr" placeholder="Enter payment amount" required="required">
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Predict Default Risk" required />
+          </form>
+        </div>
+
+        <div class="text-center text-black mt-4">
+          <h2 class="display-6 fw-bolder">Prediction Result: {{context}}</h2>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+      $(".input").focus(function () {
+        $(this).parent().addClass("focus");
+      }).blur(function () {
+        if ($(this).val() === '') {
+          $(this).parent().removeClass("focus");
+        }
+      })
+    </script>
+  </body>
+</html>
