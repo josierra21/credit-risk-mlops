@@ -266,7 +266,8 @@ Add the following:
 ## Features
 
 - Credit limit  
-- Age  
+- Age 
+- Sex 
 - Education level  
 - Marital status  
 - Payment history (six months)  
