@@ -301,7 +301,8 @@ git push origin main
 - Visual Studio Code: https://code.visualstudio.com/  
 - Git: https://git-scm.com/  
 - MongoDB: https://account.mongodb.com/  
-- Evidently AI: https://www.evidentlyai.com/  
+- Evidently AI: https://www.evidentlyai.com/ 
+- Data link: https://www.kaggle.com/datasets/ifeanyichukwunwobodo/credit-card-default
 
 ---
 
